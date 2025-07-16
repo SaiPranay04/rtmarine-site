@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import img1 from '../assets/IMG20211211093642.jpg';
+import img2 from '../assets/IMG20210304113537.jpg';
+import img3 from '../assets/IMG20211211070803.jpg';
 function Home() {
   return (
     <main className="home">
@@ -100,7 +102,7 @@ function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <img src="https://source.unsplash.com/400x250/?harbor" alt="Project 1" />
+              <img src={img1} alt="Project 1" />
               <h3>Harbor Expansion</h3>
               <p>Design and consulting for a major harbor expansion project.</p>
             </motion.div>
@@ -111,7 +113,7 @@ function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <img src="https://source.unsplash.com/400x250/?shipyard" alt="Project 2" />
+              <img src={img2} alt="Project 2" />
               <h3>Modern Shipyard</h3>
               <p>Development of a state-of-the-art shipyard facility with sustainable practices.</p>
             </motion.div>
@@ -122,7 +124,7 @@ function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <img src="https://source.unsplash.com/400x250/?offshore" alt="Project 3" />
+              <img src={img3} alt="Project 3" />
               <h3>Offshore Platform</h3>
               <p>Engineering consultancy for an offshore drilling platform installation.</p>
             </motion.div>

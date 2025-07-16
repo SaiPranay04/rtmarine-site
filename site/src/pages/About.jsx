@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import imgabout from '../assets/image.png';
 
 function About() {
   return (
@@ -10,7 +11,7 @@ function About() {
       </section>
       <section className="content container">
         <motion.img 
-          src="https://source.unsplash.com/800x400/?ocean,ship" 
+          src={imgabout} 
           alt="About us banner" 
           className="about-image"
           initial={{ opacity: 0 }} 
