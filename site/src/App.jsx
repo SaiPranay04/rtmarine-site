@@ -7,6 +7,8 @@ import Services from './pages/Services.jsx';
 import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
 import CoastalStructures from './pages/CoastalStructures';
+import Markets from './pages/Markets';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/coastal-structures" element={<CoastalStructures />} />
+        <Route path="/markets" element={<Markets />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

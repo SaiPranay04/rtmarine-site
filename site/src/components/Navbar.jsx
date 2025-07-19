@@ -21,7 +21,8 @@ function Navbar() {
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <li><NavLink to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</NavLink></li>
         <li><NavLink to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About Us</NavLink></li>
-        <li><NavLink to="/coastal-structures" className="nav-link">Coastal Structures</NavLink></li>
+        <li><NavLink to="/markets" className="nav-link">Markets</NavLink>
+</li>
         <li><NavLink to="/services" className="nav-link" onClick={() => setMenuOpen(false)}>Services</NavLink></li>
         <li><NavLink to="/projects" className="nav-link" onClick={() => setMenuOpen(false)}>Projects</NavLink></li>
         <li><NavLink to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</NavLink></li>

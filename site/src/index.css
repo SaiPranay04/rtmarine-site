@@ -1,6 +1,7 @@
 /* Google Font Import for modern, readable font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+
 :root {
   /* Color Palette */
   --primary-color: #0D3B66;    /* dark marine blue (nav background, headings) */
@@ -117,9 +118,10 @@ a:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
               url('./assets/IMG20220518182633.jpg') center/cover no-repeat;
   color: var(--white);
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
   position: relative;
+  min-height: 60vh;
 }
 .hero-content {
   position: relative;
@@ -234,6 +236,84 @@ a:hover {
 }
 .about-page .content p {
   text-align: justify;
+}
+
+/* Markets Page Styling */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  justify-items: center; /* centers individual cards */
+}
+
+.market-card {
+  position: relative;
+  width: 75%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.market-card:hover {
+  transform: scale(1.015);
+}
+
+.market-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.market-card:hover img {
+  transform: scale(1.05);
+}
+
+.market-label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(2px);
+}
+
+/* Mobile fallback */
+@media (max-width: 640px) {
+  .market-grid {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+
+  .market-card {
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .market-label {
+    font-size: 0.95rem;
+  }
+}
+
+/* Background wrapper for markets page */
+.markets-background {
+  background: url('public/passets/bgimage.png') center/cover no-repeat fixed;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.8); /* Soften with a light tint */
+  padding-bottom: 4rem;
 }
 
 /* Services page */
